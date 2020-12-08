@@ -4,6 +4,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 import '../styles/header.css';
 
 const Header = ({ isOpen, setIsOpen }) => {
+  //New Hook for resizing
   function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
       width: undefined,
