@@ -1,0 +1,13 @@
+.mobile-header a {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 50px;
+}
+
+nav {
+  padding: 30px;
+  margin-bottom: 50px;
+}
