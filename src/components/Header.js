@@ -27,6 +27,7 @@ const Header = ({ isOpen, setIsOpen }) => {
     return windowSize;
   }
 
+  // Click handler
   const handleClick = () => {
     setIsOpen(!isOpen);
     console.log(isOpen);
