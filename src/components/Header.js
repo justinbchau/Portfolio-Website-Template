@@ -39,6 +39,7 @@ const Header = ({ isOpen, setIsOpen }) => {
     <header>
       <nav id='outer-container' className='flex flex-jc-sb'>
         <h1 id='page-wrap'>Sarah</h1>
+        {/* Checking to see if size is less than 1025px */}
         {size.width < 1025 && (
           <HamburgerMenu
             isOpen={isOpen}
