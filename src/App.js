@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>

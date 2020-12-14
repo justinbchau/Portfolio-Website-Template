@@ -51,6 +51,7 @@ const Header = ({ isOpen, setIsOpen }) => {
             color='black'
             borderRadius={0}
             animationDuration={0.5}
+            className='burger'
           />
         )}
         <ul className={'hidden mobile-header'}>

@@ -11,3 +11,7 @@ nav {
   padding: 30px;
   margin-bottom: 50px;
 }
+
+.burger {
+  cursor: pointer;
+}
