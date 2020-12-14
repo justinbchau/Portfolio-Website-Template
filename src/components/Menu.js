@@ -1,12 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import styles from '../styles/menu.module.css';
 
-const Menu = () => {
-  return ReactDOM.createPortal(
-    <div className={styles.menu}>
-      <ul className={'mobile-header'}>
+const Menu = ({ isOpen }) => {
+  const appliedStyles = isOpen
+    ? styles.show + ' ' + styles.menu
+    : styles.exit + ' ' + styles.menu;
+
+  const fadeStyles = isOpen ? 'mobile-header fadeIn' : 'mobile-header';
+  return (
+    <div className={appliedStyles}>
+      <ul className={fadeStyles}>
         <li>
           <a href='#'>About</a>
         </li>
@@ -17,8 +21,7 @@ const Menu = () => {
           <a href='#'>Contact</a>
         </li>
       </ul>
-    </div>,
-    document.querySelector('#modal')
+    </div>
   );
 };
 

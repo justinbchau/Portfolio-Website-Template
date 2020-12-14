@@ -11,8 +11,10 @@ const App = () => {
 
   return (
     <div>
-      {isOpen && <Menu />}
-      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div>
+        <Menu isOpen={isOpen} />
+        <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+      </div>
       <Intro />
     </div>
   );

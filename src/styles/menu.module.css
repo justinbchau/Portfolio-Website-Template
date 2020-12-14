@@ -2,43 +2,84 @@
   position: absolute;
   font-size: 1.7em;
   background: grey;
-  height: 50vh;
+  height: 100vh;
   width: 100vw;
   padding-top: 100px;
-
-  
-  animation: fadeIn ease 1s;
--webkit-animation: fadeIn ease 1s;
--moz-animation: fadeIn ease 1s;
--o-animation: fadeIn ease 1s;
--ms-animation: fadeIn ease 1s;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
 }
 
 .menu a:hover {
   color: white;
 }
 
+.show {
+  transform: translateX(0%);
+}
+
+.exit {
+  transform: translateX(100%);
+}
+
+@keyframes slideOut {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
   }
-  
-  @-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  100% {
+    opacity: 1;
   }
-  
-  @-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  @-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  100% {
+    opacity: 1;
   }
-  
-  @-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

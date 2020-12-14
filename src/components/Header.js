@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
 
 import '../styles/header.css';
+import Menu from './Menu';
 
 const Header = ({ isOpen, setIsOpen }) => {
   //New Hook for resizing
@@ -30,7 +31,6 @@ const Header = ({ isOpen, setIsOpen }) => {
   // Click handler function
   const handleClick = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   };
 
   const size = useWindowSize();
@@ -41,18 +41,20 @@ const Header = ({ isOpen, setIsOpen }) => {
         <h1 id='page-wrap'>Sarah</h1>
         {/* Checking to see if size is less than 1025px */}
         {size.width < 1025 && (
-          <HamburgerMenu
-            isOpen={isOpen}
-            menuClicked={handleClick}
-            width={25}
-            height={20}
-            strokeWidth={1}
-            rotate={0}
-            color='black'
-            borderRadius={0}
-            animationDuration={0.5}
-            className='burger'
-          />
+          <div>
+            <HamburgerMenu
+              isOpen={isOpen}
+              menuClicked={handleClick}
+              width={25}
+              height={20}
+              strokeWidth={1}
+              rotate={0}
+              color='black'
+              borderRadius={0}
+              animationDuration={0.5}
+              className='burger'
+            />
+          </div>
         )}
         <ul className={'hidden mobile-header'}>
           <li>
