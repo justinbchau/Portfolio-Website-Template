@@ -1,33 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
 
+import useWindowSize from '../hooks/useWindowSize';
+
 import '../styles/header.css';
 import Menu from './Menu';
 
-const Header = ({ isOpen, setIsOpen }) => {
-  //New Hook for resizing
-  function useWindowSize() {
-    const [windowSize, setWindowSize] = useState({
-      width: undefined,
-      //   height: undefined,
-    });
-    useEffect(() => {
-      function handleResize() {
-        setWindowSize({
-          width: window.innerWidth,
-          //   height: window.innerHeight,
-        });
-      }
-      window.addEventListener('resize', handleResize);
-
-      handleResize();
-
-      return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return windowSize;
-  }
-
+const Header = ({ isOpen, setIsOpen, Name }) => {
   // Click handler function
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -38,7 +17,7 @@ const Header = ({ isOpen, setIsOpen }) => {
   return (
     <header>
       <nav id='outer-container' className='flex flex-jc-sb'>
-        <h1 id='page-wrap'>Sarah</h1>
+        <h1 className='header'>{Name}</h1>
         {/* Checking to see if size is less than 1025px */}
         {size.width < 1025 && (
           <div>
@@ -51,22 +30,24 @@ const Header = ({ isOpen, setIsOpen }) => {
               rotate={0}
               color='black'
               borderRadius={0}
-              animationDuration={0.5}
+              animationDuration={0.4}
               className='burger'
             />
           </div>
         )}
-        <ul className={'hidden mobile-header'}>
-          <li>
-            <a href='#'>About</a>
-          </li>
-          <li>
-            <a href='#'>Projects</a>
-          </li>
-          <li>
-            <a href='#'>Contact</a>
-          </li>
-        </ul>
+        {size.width > 1025 && (
+          <ul className={'desktop-menu'}>
+            <li>
+              <a href='#about'>About</a>
+            </li>
+            <li>
+              <a href='#'>Projects</a>
+            </li>
+            <li>
+              <a href='#'>Contact</a>
+            </li>
+          </ul>
+        )}
       </nav>
     </header>
   );

@@ -1,0 +1,16 @@
+:root {
+  --purple-font-color: #a685e2;
+  --blueish-grey-color: #d0e8f2;
+  --pink-hover-color: #e05297;
+
+  --modal-font-color: #b088f9;
+  --modal-bg-color: #98acf8;
+}
+
+html {
+  background-color: var(--blueish-grey-color);
+}
+
+.relative {
+  position: relative;
+}

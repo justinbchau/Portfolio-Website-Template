@@ -1,3 +1,11 @@
+.header {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--purple-font-color);
+}
+
 .mobile-header a {
   display: flex;
   justify-content: flex-end;
@@ -8,14 +16,37 @@
   margin-right: 40px;
 }
 
+.desktop-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.desktop-menu a {
+  font-size: 20px;
+  margin-right: 30px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s ease;
+}
+
+.desktop-menu a:hover {
+  color: var(--pink-hover-color);
+}
+
 .fadeIn {
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn 1.3s ease-in;
   /* animation-delay: 1s; */
 }
 
 nav {
   padding: 30px;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1025px) {
+  nav {
+    margin-bottom: 0;
+  }
 }
 
 .burger {

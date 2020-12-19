@@ -15,6 +15,10 @@ code {
   display: flex;
 }
 
+.flex-d-row {
+  flex-direction: row;
+}
+
 .flex-jc-c {
   justify-content: center;
 }

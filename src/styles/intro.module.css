@@ -1,6 +1,37 @@
 .content {
-  font-size: 24px;
-  height: 90vh;
-  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: 30px;
   text-align: left;
+  line-height: 2;
+}
+
+.content h1 {
+  font-size: 30px;
+}
+
+.content h2 {
+  font-size: 20px;
+}
+
+span {
+  color: var(--purple-font-color);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1025px) {
+  .content {
+    justify-content: flex-start;
+    margin-top: 150px;
+    height: 90vh;
+  }
+
+  .content h1 {
+    font-size: 50px;
+  }
+
+  .content h2 {
+    font-size: 30px;
+  }
 }

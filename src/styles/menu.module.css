@@ -1,24 +1,31 @@
 .menu {
   position: absolute;
   font-size: 1.7em;
-  background: grey;
+  background: var(--modal-bg-color);
   height: 100vh;
+  top: 0;
+  left: 0;
   width: 100vw;
   padding-top: 100px;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(100%);
-}
-
-.menu a:hover {
+  transform-origin: right;
+  transition: width 0.3s ease-in-out;
   color: white;
 }
 
+.menu a {
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .show {
-  transform: translateX(0%);
+  transition: transform 0.2s ease-in-out;
+  transform: scaleX(1);
 }
 
 .exit {
-  transform: translateX(100%);
+  transition: transform 0.2s ease-in-out;
+  transform: scaleX(0);
 }
 
 @keyframes slideOut {
@@ -40,42 +47,6 @@
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
   0% {
     opacity: 0;
   }

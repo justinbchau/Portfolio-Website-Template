@@ -1,0 +1,27 @@
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+}
+
+.title {
+  color: var(--purple-font-color);
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.aboutMe {
+  margin: 0 40px;
+  line-height: 2;
+}
+
+@media screen and (min-width: 1025px) {
+  .aboutMe {
+    margin: 0 100px;
+  }
+}
