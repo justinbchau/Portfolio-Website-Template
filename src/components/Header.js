@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
 
 import useWindowSize from '../hooks/useWindowSize';
 
 import '../styles/header.css';
-import Menu from './Menu';
 
 const Header = ({ isOpen, setIsOpen, Name }) => {
   // Click handler function
