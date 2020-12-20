@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div>
       <div className='relative'>
-        <Menu isOpen={isOpen} />
+        <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
         <Header Name={info.name} isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
       <Intro Name={info.name} />
