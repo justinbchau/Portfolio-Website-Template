@@ -34,3 +34,11 @@ export const projects = [
     link: 'https://instagram.com/',
   },
 ];
+
+export const socialLinks = {
+  instagram: 'https://instagram.com/chau_codes',
+  twitter: 'https://twitter.com/chau_codes',
+  youtube: 'https://youtube.com/c/chaucodes',
+  github: 'https://github.com/chaucodes',
+  linkedin: 'https://www.linkedin.com/in/chaucodes/',
+};
