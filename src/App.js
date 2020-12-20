@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Intro from './pages/Intro';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Footer from './components/Footer';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const App = () => {
       <Intro Name='Sarah' />
       <About />
       <Projects />
+      <Footer email='hello@sarahevans.com' />
     </div>
   );
 };

@@ -5,3 +5,11 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+.title {
+  color: var(--purple-font-color);
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,16 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.socials a {
+  margin-right: 40px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.socials a:last-child {
+  margin-right: 0;
+}
