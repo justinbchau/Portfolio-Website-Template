@@ -2,16 +2,22 @@ import React from 'react';
 
 import styles from '../styles/accordian.module.css';
 
-const AccordianItem = () => {
+const AccordianItem = ({ title, description, link }) => {
   return (
-    <section className={styles.accordian}>
-      <div className={styles.accordianItem}>
-        <h1>Title</h1>
-        <div className={styles.accordianItemContent}>
-          <p>content</p>
+    <>
+      <section className={styles.accordian}>
+        <div className={styles.accordianItem}>
+          <h1>{title}</h1>
+          <div className={styles.accordianItemContent}>
+            <br />
+            <p>{description}</p>
+            <br />
+            <a href={link}>{link}</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <br />
+    </>
   );
 };
 

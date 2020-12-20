@@ -11,3 +11,26 @@ export const info = {
   is over. The test will begin on the word start. On your mark, get ready,
   start.`,
 };
+
+export const projects = [
+  {
+    title: 'Test 1',
+    description: 'This is a test description for the project accordian',
+    link: 'https://youtube.com/',
+  },
+  {
+    title: 'Test 2',
+    description: 'Anotha description',
+    link: 'https://google.com/',
+  },
+  {
+    title: 'Test 3',
+    description: 'Anotha description',
+    link: 'https://twitter.com/',
+  },
+  {
+    title: 'Test 4',
+    description: 'Anotha description',
+    link: 'https://instagram.com/',
+  },
+];
