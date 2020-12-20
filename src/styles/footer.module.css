@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: space-between;
   flex-direction: row;
   text-align: center;
   height: 40vh;
@@ -15,8 +15,20 @@
   margin-top: 30px;
 }
 
-.footer p {
-  margin-top: 50px;
-  text-decoration: underline;
+.footer a {
+  margin-top: 40px;
+  color: inherit;
   font-size: 24px;
+}
+
+@media screen and (min-width: 1025px) {
+  .footer h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer a {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 }

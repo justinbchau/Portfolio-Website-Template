@@ -43,7 +43,7 @@ const Header = ({ isOpen, setIsOpen, Name }) => {
               <a href='#projects'>Projects</a>
             </li>
             <li>
-              <a href='#'>Contact</a>
+              <a href='#contact'>Contact</a>
             </li>
           </ul>
         )}

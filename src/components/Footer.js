@@ -8,7 +8,9 @@ const Footer = ({ email }) => {
     <footer id='contact' className={styles.footer}>
       <div>
         <h1>Contact Me</h1>
-        <p>{email}</p>
+        <div className='flex flex-jc-c email'>
+          <a href='mailto:#'>{email}</a>
+        </div>
         <Socials />
       </div>
     </footer>
