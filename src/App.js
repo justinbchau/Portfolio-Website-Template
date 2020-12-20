@@ -9,6 +9,8 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Footer from './components/Footer';
 
+import { info } from './data/info';
+
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,12 +18,12 @@ const App = () => {
     <div>
       <div className='relative'>
         <Menu isOpen={isOpen} />
-        <Header Name='Sarah' isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Header Name={info.name} isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
-      <Intro Name='Sarah' />
-      <About />
+      <Intro Name={info.name} />
+      <About Copy={info.copy} />
       <Projects />
-      <Footer email='hello@sarahevans.com' />
+      <Footer email={info.email} />
     </div>
   );
 };

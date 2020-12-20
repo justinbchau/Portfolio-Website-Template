@@ -1,0 +1,27 @@
+.accordian {
+  padding: 0;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.accordian .accordianItem {
+  background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
+  padding: 1em;
+  color: black;
+}
+
+.accordian h1 {
+  margin: 0;
+}
+
+.accordian:hover .accordianItem:hover .accordianItemContent,
+.accordian .accordion-item--default .accordianItemContent {
+  height: 6em;
+}
+
+.accordianItemContent,
+.accordian:hover .accordianItemContent {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.25s;
+}

@@ -1,14 +1,15 @@
 .content {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 80vh;
   margin-left: 30px;
+  margin-top: 90px;
   text-align: left;
   line-height: 2;
 }
 
 .content h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .content h2 {
@@ -25,10 +26,11 @@ span {
     justify-content: flex-start;
     margin-top: 150px;
     height: 90vh;
+    margin-left: 80px;
   }
 
   .content h1 {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .content h2 {
